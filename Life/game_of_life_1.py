@@ -38,7 +38,7 @@ for i in range(100):
     survived_cells += survive_or_not(data[30], data[31], '0')
     born_cells = born_or_not('0', survived_cells[0], survived_cells[1])
     for j in range(1, 31):
-        born_cells += born_or_not(survived_cells[j-1], survived_cells[j], survived_cells[j+1])
+        born_cells += born_or_not(survived_cells[j - 1], survived_cells[j], survived_cells[j + 1])
     born_cells += born_or_not(survived_cells[30], survived_cells[31], '0')
     res.append(born_cells)
     data = born_cells
