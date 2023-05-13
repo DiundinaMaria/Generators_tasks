@@ -3,8 +3,7 @@ from scipy.stats import kstest, chisquare
 FILE_NAME = 'result_2.txt'
 
 with open(FILE_NAME) as file:
-    lines = [int(line) for line in file.readlines()]
-    print(lines)
+    lines = [int(line, 2) for line in file.readlines()]
     function_sequence = []
     for i in range(1, 101):
         function_sequence.append(i * i)
