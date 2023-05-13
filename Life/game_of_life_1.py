@@ -43,5 +43,5 @@ for i in range(100):
     res.append(born_cells)
     data = born_cells
 
-with open('result_1.txt', mode='a') as result:
+with open('result_1.txt', mode='w') as result:
     result.write('\n'.join(res))
